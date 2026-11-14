@@ -1,0 +1,120 @@
+{
+  "sourceRepository": "956tris/MetroFuse",
+  "sourceCommit": "ec041bba394fe38c38c6b674f9a608bc9f9de499",
+  "api": "1.1.0",
+  "referencePlugin": "956tris/MetroFuse-JioSaavn",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "95f4171f433a3ba2d9f37639c056b6d9ceef70fae0f861364fa149101c4ee9dd"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "902d537c99da6ac983d66cc76755518e580ed2d3057096c5e314a0e47a6df24f"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "4879d7819db17b83f8febc739250220a217f494fca1d558d00fa7c492f35440f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "0724ba05156e2374f622f74acc5a8a3f0a9ea04b7dc2772249560dff82282715"
+    },
+    {
+      "path": "docs/javascript-plugin-development.md",
+      "sha256": "681a5b2a568d320a4fc840e65e81cd7cd0d06826e5d6a75c8d981456d3449e07"
+    },
+    {
+      "path": "docs/manifest.md",
+      "sha256": "19314c3bf8ef574be10084f035a5127d9f1c4376d90d031cb78628cf22c6f2d7"
+    },
+    {
+      "path": "docs/native-plugin-development.md",
+      "sha256": "17ae3e051d87f2b651f118cf523a12956de3320445b1b263d801b7053922f6d9"
+    },
+    {
+      "path": "docs/packaging.md",
+      "sha256": "4a30270a6d9776ece33b4d69eda83136e07b1247ad0cf05c0ca4b4f7b6523c6c"
+    },
+    {
+      "path": "docs/plugin-api.md",
+      "sha256": "51a9c17ce60ee9ebee4fc90c2568b7f6b9b12afc745500c865cbe1ff687176da"
+    },
+    {
+      "path": "docs/plugin-architecture.md",
+      "sha256": "171346f3839f6edf94be612a7b18e58246ff49caa4b53cc689466c84e1a8c8c0"
+    },
+    {
+      "path": "docs/plugin-home-login.md",
+      "sha256": "ec2a816c114c440e11316be9611f11e9e657eb34c20bdc65236a298902d9a428"
+    },
+    {
+      "path": "docs/plugin-marketplace.md",
+      "sha256": "0cd8de0f3f5a9081e60d57991fa23b0afa016ae51685265932bb752c2d9f2951"
+    },
+    {
+      "path": "docs/quickstart.md",
+      "sha256": "458dea728f2740cfd5866636a2bc28befbcd63985167f08eec4d8ee8b63c7d5a"
+    },
+    {
+      "path": "docs/testing.md",
+      "sha256": "3f28d5da2c664f9760f909b6780f64cab8d9476c23c3d93ac645cdd324df6a5e"
+    },
+    {
+      "path": "reference/README.md",
+      "sha256": "964775df9637afc315e5233ab68b5e6cf9ebcf859c3eb737788e2be337ef28d9"
+    },
+    {
+      "path": "reference/api/Api.kt",
+      "sha256": "2718c6084c17d160977c654030faa776158f21d600bc9e57d3ed5c74c70134c1"
+    },
+    {
+      "path": "reference/api/Catalog.kt",
+      "sha256": "07930e47ed5179defb34d44df790c7f24b0cdf54012dab66fdf1edeb92968c3d"
+    },
+    {
+      "path": "reference/api/Home.kt",
+      "sha256": "f5063eb4595cccdea32d9559249fd8f2859b02c57cdd439757bd98abc38217ff"
+    },
+    {
+      "path": "reference/api/Host.kt",
+      "sha256": "e5c3b93a3e85217988f24039d71be87b49b3699c8970c60bbecdbaead219f325"
+    },
+    {
+      "path": "reference/api/Login.kt",
+      "sha256": "70359ab2ecb911a9dc37dac21059d0b2be4b00df73a344c712952815451939eb"
+    },
+    {
+      "path": "reference/api/Matching.kt",
+      "sha256": "97efaa96d7f00c2eaf7029ff3978f42f5ab706ce6be60e54cb5514a03c0ad89c"
+    },
+    {
+      "path": "reference/api/Providers.kt",
+      "sha256": "a9736109cba478e3e331964b7c866991397d8e660f333882c1f214528f982a65"
+    },
+    {
+      "path": "reference/api/Services.kt",
+      "sha256": "7e726fd16576572cdb4140ae2cdbfb72fcf66a2611ae94a6f026bd2383a4a6c0"
+    },
+    {
+      "path": "reference/api/Settings.kt",
+      "sha256": "f4e41a798c1d0f8ca4c5c271cab2bcc738561d69589ad5e8426b3e3273bf9d6e"
+    },
+    {
+      "path": "tooling/native-fixture.ps1",
+      "sha256": "e627057a156b2be1c2b33bdcaf714be925b3326fb6c62bb0f3f2baafcc9c2366"
+    },
+    {
+      "path": "tooling/pack-mfp.ps1",
+      "sha256": "e3aba1ec269b000cab89f7e019c789620afd53faa87c9d9f4dc7add428709d3d"
+    },
+    {
+      "path": "tooling/verify.py",
+      "sha256": "5cef1b4776b8ee49c915fb66cb6578fcf4b82f51b210a3d06b1b465d15524427"
+    }
+  ]
+}

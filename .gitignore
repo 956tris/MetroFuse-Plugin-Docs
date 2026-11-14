@@ -1,0 +1,12 @@
+build/
+*.mfp
+*.jar
+*.apk
+local.properties
+*.keystore
+__pycache__/
+.idea/
+.gradle/
+/reference/jiosaavn/
+/reference/native/
+/plugins/

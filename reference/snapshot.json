@@ -22,7 +22,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "0724ba05156e2374f622f74acc5a8a3f0a9ea04b7dc2772249560dff82282715"
+      "sha256": "f51d9b61bcfbaa3e32f0f85f07726d6ce8d04164605027f6c416d4ac5879a80d"
     },
     {
       "path": "docs/javascript-plugin-development.md",
@@ -38,7 +38,7 @@
     },
     {
       "path": "docs/packaging.md",
-      "sha256": "4a30270a6d9776ece33b4d69eda83136e07b1247ad0cf05c0ca4b4f7b6523c6c"
+      "sha256": "c8e7bbfb57cb827481caa3af938117d23ea4528827a2bb838a330954429a9db8"
     },
     {
       "path": "docs/plugin-api.md",

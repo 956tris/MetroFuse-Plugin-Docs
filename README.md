@@ -16,7 +16,7 @@ The application's core supplies plugin management, provider routing, the Home so
 | Publish downloadable packages and registry entries | [Marketplace](docs/plugin-marketplace.md) |
 | Verify behavior and diagnose failures | [Testing and troubleshooting](docs/testing.md) |
 | Understand the host integration | [Architecture](docs/plugin-architecture.md) |
-| Complete JioSaavn example and JAR/APK/MFP downloads | [JioSaavn repository](https://github.com/956tris/MetroFuse-JioSaavn) |
+| Complete JioSaavn source and JAR/APK/MFP downloads | [Source](https://github.com/956tris/MetroFuse-JioSaavn), [Releases](https://github.com/956tris/MetroFuse-JioSaavn/releases) |
 | Source credits and license | [Provenance](PROVENANCE.md), [GPL-3.0](LICENSE) |
 
 Each plugin has its own repository. [MetroFuse-JioSaavn](https://github.com/956tris/MetroFuse-JioSaavn) contains the complete reference implementation, independent build configuration and JAR/APK/MFP downloads. This repository contains the guide, [API source reference](reference/README.md) and authoring tools.

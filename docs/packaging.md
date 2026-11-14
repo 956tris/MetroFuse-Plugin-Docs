@@ -37,4 +37,4 @@ JVM activation uses private JAR copies so Windows can replace installed files. A
 
 ## Release
 
-Publish the exact tested bytes with a version and SHA-256 checksum. Keep source, GPL and dependency notices available. Test the downloaded artifact rather than only your loose source folder. Use the [marketplace guide](plugin-marketplace.md) for a static HTTPS registry, platform download fields and review requirements.
+Commit plugin source and build tools to its own repository. Keep compiled JAR/APK/MFP files and generated checksums out of Git tracking. Publish the exact tested bytes as assets of a versioned GitHub release, with SHA-256 checksums and a tag for the matching source. Keep source, GPL and dependency notices available. Test the downloaded artifact rather than only your loose source folder. Use the [marketplace guide](plugin-marketplace.md) for a static HTTPS registry, platform download fields and review requirements.

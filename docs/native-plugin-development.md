@@ -14,6 +14,8 @@ cd MetroFuse
 
 The output is `plugin-api/build/libs/plugin-api-desktop-1.1.0.jar`. Do not copy application source or plugin code into the host to develop a separate plugin. Use this API JAR only on the plugin's compile classpath.
 
+For plugin-owned WebView screens, also export `:plugin-sdk:desktopJar`. Add `plugin-sdk/build/libs/plugin-sdk-desktop-1.1.0.jar` as a compile-only dependency and enable the matching Compose compiler plugin. The host supplies SDK classes at runtime. Keep those classes out of JAR/APK payloads, while including the SDK on D8's classpath and your test runtime. Windows SDK export requires .NET SDK 10; `-PdotnetExecutable=<path>` selects a local SDK. See [browser sign-in](browser-login.md) and the separate YTM reference for complete build configuration.
+
 The current toolchain is Java 25, Kotlin 2.4.21 and Compose 1.13.0-beta02. Bytecode targets JVM 21. The native manifest ABI is exactly `kotlin-2.4.21_compose-1.13.0-beta02_api-1.1.0`. Rebuild when the host changes that tag. Android packaging additionally requires SDK platform `android-37.0` and build tools `37.0.0`.
 
 ## Declare compile-only host dependencies

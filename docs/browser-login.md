@@ -88,4 +88,3 @@ The host delivers credentials only to the matching plugin activation. A callback
 ## Verification
 
 Check SDK/API class separation, import and enable/disable, contributed account UI in native and MFP variants, guest cookies, malformed origins, stale activation callbacks, failed account replacement, logout and Home refresh. Actual service sign-in and device audio need manual verification separately from backend fixtures. Never include real account cookies in tests or releases.
-

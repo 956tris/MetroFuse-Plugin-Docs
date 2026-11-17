@@ -189,6 +189,8 @@ Events reuse bounded flows. Built-in names include `playback`, `track_changed`, 
 
 ## Trust and current limits
 
+Host state notifications exceeding the 65,536-character JSON limit emit `{invalidated:true}` instead of an oversized snapshot. A large `queue_changed` notification also includes `totalCount` and omits `queue`. Refresh from native `context.player.state.value` or JavaScript `host.playerState()` when invalidated; an omitted queue does not mean the queue was cleared. Small notifications retain their existing payloads. Plugin-published events still reject oversized payloads.
+
 Both native code and QuickJS bindings run in-process. Native plugins are trusted executable code and can cause process failure or retain references outside supported lifecycle contracts. This API does not claim a native sandbox, guaranteed class unloading, forced termination of blocking code, automatic dependency downloads or isolation from all arbitrary plugin side effects.
 
 The host still retains upstream provider-specific catalog/playback behavior behind compatibility adapters. Plugin capability registration does not imply every legacy MetroFuse feature or provider has been ported. Available build, playback, instrumented-device and packaged-app results are recorded in [testing and platform limits](testing.md). Compilation alone is not runtime validation.

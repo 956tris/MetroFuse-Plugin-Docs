@@ -16,6 +16,12 @@ Register `artwork.canvas/v1` to receive `{track}` and return `{url}` when matchi
 
 Register `catalog.artist-metadata/v1` to receive `{id}` and return artist details directly or inside `metadata`. The host selects the service belonging to the catalog owner. Supported fields are `biography`, `monthlyListeners`, `featuring` as `CatalogAlbum` entries, `relatedArtists` as `CatalogArtist` entries, and `playlists` as `CatalogPlaylist` entries. `concerts` and `merch` entries supply a title or name and URL or URI, plus optional city, venue, startDateIso or price. The host validates external HTTPS links and bounds list and text sizes. Omit unavailable fields.
 
+## Video button
+
+Register `playback.video/v1` to hook the player's video button. The host resolves the track's audio through the plugin's `AudioSource` as usual, then calls this service with `{track, maxHeight?, allowSabr, allowHls}` and expects either a direct stream `{url}` or a validated SABR video session `{sabr}` (or both), plus optional `headers`, `mimeType`, `codecs`, `width`, `height`, `bitrate`, `itag`, `contentLengthBytes`, `expiresAtMillis`, `availableHeights` and `musicVideoId`. The host plays the audio it already has and renders the returned HTTP(S) or SABR stream as the picture, so a video-only or muxed stream is enough. Return an empty object when the track has no video; the host then reports video unavailable.
+
+The host calls the service only for the enabled plugin that is the current music source, discards results if that selection changes, bounds `url` to 8192 characters, `sabr` to 256 KiB, `availableHeights` to 32 entries (`1..4320`), and `headers` to 32 entries, and times out after 15 seconds. Native plugins can use `PluginContext.registerVideoProvider(PluginVideoRequestProvider)` (or `PluginVideoProvider`) from the plugin SDK, which registers this service and handles the JSON shape.
+
 ## Native dialogs and Android packaging
 
 Use the SDK's `PluginAlertDialog` for account dialogs compiled against the desktop SDK and packaged for Android. Its expect/actual implementations call each platform's Compose dialog API. A desktop-only Compose call can otherwise leave a `_skikoKt` reference in Android DEX.
